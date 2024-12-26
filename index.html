@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="style.css">
+    <title>Challa Madhumitha - Web Developer</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="navigation-bar">
+                <div class="brand-logo" data-aos="zoom-in" data-aos-duration="1500">
+                    Port <span>Folio</span>
+                </div>
+                <div class="nav-links">
+                    <div class="nav-item" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100"><a href="#home">Home</a></div>
+                    <div class="nav-item" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200"><a href="#about">About</a></div>
+                    <div class="nav-item" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300"><a href="#skills">Skills</a></div>
+                    <div class="nav-item" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400"><a href="#services">Services</a></div>
+                    <div class="nav-item" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500"><a href="#contact">Contact</a></div>
+                </div>
+                <i class="fa-solid fa-bars hamburger-icon" onclick="toggleMenu()"></i>
+            </div>
+            <div class="dropdown-menu">
+                <div class="menu-links">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#services">Services</a>
+                    <a href="#contact">Contact</a>
+                    <i class="fa-solid fa-xmark close-icon" onclick="closeMenu()"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="intro-section">
+            <div class="intro-container">
+                <div class="profile-image" data-aos="zoom-out" data-aos-duration="3000">
+                    <img src="madhu.jpg" alt="Challa Madhumitha">
+                </div>
+                <div class="intro-text">
+                    <h1 data-aos="fade-left" data-aos-duration="1500" data-aos-delay="700">Hello, I'm <span>Madhumitha</span></h1>
+                    <div class="typing-effect" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="900">I am a <span class="typed-text"></span><label for="">|</label></div>
+                    <p data-aos="flip-down" data-aos-duration="1500" data-aos-delay="1100">I am passionate about creating engaging web applications and innovative solutions for users. Let's build something amazing together.</p>
+                    <div class="social-icons">
+                        <a href="#" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1300"><i class="fa-brands fa-github"></i></a>
+                        <a href="#" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1400"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1500"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1600"><i class="fa-brands fa-twitter"></i></a>
+                    </div>
+                    <div class="action-button" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="1800">
+                        <button>Hire Me</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about-section">
+            <div class="section-header" data-aos="fade-up" data-aos-duration="1500">
+                <h2>About Me</h2>
+            </div>
+            <div class="about-content">
+                <p>I am a passionate web developer with a focus on building scalable, performance-optimized websites and applications. I am proficient in HTML, CSS, JavaScript, and frameworks like React. I believe in writing clean, maintainable code and delivering quality work for clients.</p>
+            </div>
+        </section>
+
+        <section id="skills" class="skills-section">
+            <div class="section-header" data-aos="fade-up" data-aos-duration="1500">
+                <h2>Skills</h2>
+            </div>
+            <div class="skills-content">
+                <ul>
+                    <li>HTML5</li>
+                    <li> CSS3</li>
+                    <li>JavaScript</li>
+                    <li>Version Control (Git, GitHub)</li>
+                    <li>Responsive Web Design</li>
+                   
+                </ul>
+            </div>
+        </section>
+
+        <section id="services" class="services-section">
+            <div class="section-header" data-aos="fade-up" data-aos-duration="1500">
+                <h2>Services</h2>
+            </div>
+            <div class="services-content">
+                <div class="service">
+                    <h3>Web Design</h3>
+                    <p>Create user-friendly and visually stunning websites.</p>
+                </div>
+                <div class="service">
+                    <h3>Web Development</h3>
+                    <p>Develop interactive websites and web applications.</p>
+                </div>
+                <div class="service">
+                    <h3>Consulting</h3>
+                    <p>Provide creative ideas on web technologies and building them.</p>
+                </div>
+            </div>
+        </section>
+
+      
+<h1>My Work</h1>
+    <div class="projects-container">
+      <div class="project" onclick="openProject('http://127.0.0.1:5501/tictactoe.html')">
+        <img src="ttt.png" alt="Tic Tac Toe">
+        <div class="description">
+          <h2>Tic Tac Toe</h2>
+          <p>The app connects you to your nostalgic memories</p>
+        </div>
+      </div>
+      <div class="project" onclick="openProject('http://127.0.0.1:5501/index.html')">
+        <img src="amazon.png" alt="E-commerce App">
+        <div class="description">
+          <h2>E-commerce Website</h2>
+          <p>A complete solution for online shopping. Explore more now.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+        <section id="contact" class="contact-section">
+            <div class="section-header" data-aos="fade-up" data-aos-duration="1500">
+                <h2>Contact Me</h2>
+            </div>
+            <div class="contact-content">
+                <form>
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <textarea placeholder="Your Message" required></textarea>
+                    <button type="submit" class="cta-btn">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+   
+    <footer>
+        <p>&copy; 2024 Challa Madhumitha. All rights reserved.</p>
+    </footer>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({ offset: 0 });
+        const texts = [
+        "DEVELOPER",
+    "ENGINEER",
+    "CODER",
+        ];
+
+        let index = 0;
+        let charIndex = 0;
+        const typedTextElement = document.querySelector('.typed-text');
+
+        function type() {
+            if (charIndex < texts[index].length) {
+                typedTextElement.textContent += texts[index].charAt(charIndex);
+                charIndex++;
+                setTimeout(type, 200);
+            } else {
+                setTimeout(erase, 2000); 
+            }
+        }
+
+        function erase() {
+            if (charIndex > 0) {
+                typedTextElement.textContent = texts[index].substring(0, charIndex - 1);
+                charIndex--;
+                setTimeout(erase, 100);
+            } else {
+                index = (index + 1) % texts.length;
+                setTimeout(type, 500); 
+            }
+        }
+
+        window.onload = function () {
+            setTimeout(type, 1000); 
+        };
+    </script>
+    <script src="script.js"></script>
+</body>
+
+</html>
