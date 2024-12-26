@@ -1,0 +1,291 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+.navbar {
+    background: linear-gradient(to right, #720404, #402e83);
+    font-family: 'Book Antiqua';
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .logo {
+    color: #d7c993;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.navbar .nav-link {
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+}
+
+.navbar .nav-link:hover {
+    color: #ff6347;
+    text-decoration: underline;
+}
+
+.bg-hero {
+    background-image: url('bg1.avif');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    opacity: 100;
+    animation: fadeIn 3s forwards;
+}
+
+.bg-hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.bg-hero .content {
+    position: relative;
+    z-index: 2;
+}
+
+.bg-hero h1 {
+    font-size: 4rem;
+    font-family: 'Broadway', sans-serif;
+    text-shadow: 2px 2px 5px #1100ff;
+    color: rgb(255, 72, 0);
+    animation: slideUp 2s ease-out;
+}
+
+.bg-hero p {
+    font-size: 1.2rem;
+    font-family: 'Book Antiqua';
+}
+
+.btn-primary {
+    background-color: #ff7e5f;
+    border: none;
+    font-weight: bold;
+    font-family: 'Book Antiqua';
+    padding: 10px 20px;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #feb47b;
+    transform: scale(1.05);
+}
+
+/* About Section */
+#about {
+    padding: 50px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+#about h2 {
+    font-family: 'Broadway', sans-serif;
+    color: #402e83;
+}
+
+#about p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    font-family: 'Book Antiqua';
+    color: #333;
+}
+
+footer {
+    background: linear-gradient(to right, #720404, #402e83);
+    color: white;
+    padding: 15px;
+    text-align: center;
+    font-family: 'Book Antiqua';
+}
+
+.social-icons a {
+    font-size: 24px;
+    margin: 0 15px;
+    color: white;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #0d6efd !important;
+    transform: scale(1.2);
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes slideUp {
+    0% {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes heroBgAnimation {
+    0% {
+        background-position: center;
+    }
+    100% {
+        background-position: top right;
+    }
+}
+
+.nav-link:hover {
+    color: #ff6347;
+    text-decoration: underline;
+    transition: all 0.3s ease-in-out;
+}
+
+.logo:hover {
+    color: #ff6347;
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #ff6347;
+    transform: scale(1.05);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.bg-hero {
+    background-image: url('bg1.avif');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    animation: heroBgAnimation 5s infinite alternate;
+}
+
+@media (max-width: 767px) {
+    .navbar .logo {
+        font-size: 1.5rem;
+    }
+
+    .navbar .nav-link {
+        font-size: 0.9rem;
+    }
+
+    .bg-hero h1 {
+        font-size: 3rem;
+    }
+
+    .bg-hero p {
+        font-size: 1rem;
+    }
+
+    .btn-primary {
+        padding: 8px 16px;
+    }
+
+    #about {
+        padding: 30px 20px;
+    }
+
+    #about h2 {
+        font-size: 2rem;
+    }
+
+    #about p {
+        font-size: 1rem;
+    }
+
+    .social-icons a {
+        font-size: 20px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .navbar .logo {
+        font-size: 1.7rem;
+    }
+
+    .navbar .nav-link {
+        font-size: 1.1rem;
+    }
+
+    .bg-hero h1 {
+        font-size: 3.5rem;
+    }
+
+    .bg-hero p {
+        font-size: 1.1rem;
+    }
+
+    .btn-primary {
+        padding: 9px 18px;
+    }
+
+    #about {
+        padding: 40px 30px;
+    }
+
+    #about h2 {
+        font-size: 2.2rem;
+    }
+
+    #about p {
+        font-size: 1.1rem;
+    }
+}
+
+@media (min-width: 1025px) {
+    .navbar .logo {
+        font-size: 1.8rem;
+    }
+
+    .navbar .nav-link {
+        font-size: 1.2rem;
+    }
+
+    .bg-hero h1 {
+        font-size: 4rem;
+    }
+
+    .bg-hero p {
+        font-size: 1.2rem;
+    }
+
+    .btn-primary {
+        padding: 10px 20px;
+    }
+
+    #about {
+        padding: 50px;
+    }
+
+    #about h2 {
+        font-size: 2.5rem;
+    }
+
+    #about p {
+        font-size: 1.2rem;
+    }
+}
